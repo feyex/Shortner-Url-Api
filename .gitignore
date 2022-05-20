@@ -1,8 +1,9 @@
 # dependencies
 /node_modules
 
-# IDEs and editors
+# Files
 /App
+package-lock.json
 
 
 # IDE - VSCode
