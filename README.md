@@ -14,9 +14,9 @@ A URL shortening API service, so that users may have custom URLs to their long U
 
 The following components and tools are used in this API:
 
-- [NodeJs](https://www.typescriptlang.org/)
-- [ExpressJs](https://nestjs.com/)
-- [MongoDB](https://mariadb.org/)
+- [NodeJs]
+- [ExpressJs]
+- [MongoDB]
 
 ## Pre-requisites
 
