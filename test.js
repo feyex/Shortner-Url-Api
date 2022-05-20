@@ -74,7 +74,7 @@ describe("Shortner Api Url test", () => {
             .end((err, res) => {
                 res.status.should.equal(400);
                 console.log(res)
-                res.text.should.equall('Short Code Url Value Cannot be less than four in length');
+                res.body.message.should.equall('Short Code Url Value Cannot be less than four in length');
                 done();
             });
     });
