@@ -25,7 +25,11 @@ The following is required to run the service locally:
 
 ## Start up
 
-The following command can be used to run the application locally
+The following command can be used to run the application locally.
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev

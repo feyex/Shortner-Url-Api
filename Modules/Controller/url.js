@@ -15,9 +15,9 @@ module.exports.createUrlShortner = async (req, res) => {
         try {
 
             // Add https if url has no http to ensure redirect
-            if(longUrl.includes('www')){
-                longUrl = longUrl.includes('http') ? longUrl : isValidUrl.makeUrl(longUrl) ;
-                 
+            if (longUrl.includes('www')) {
+                longUrl = longUrl.includes('http') ? longUrl : isValidUrl.makeUrl(longUrl);
+
             }
 
             let url = await UrlSchema.findOne({ longUrl });
@@ -68,7 +68,7 @@ module.exports.getUrlByShortCode = async (req, res) => {
     try {
         //check if url exists
         const url = await UrlSchema.findOne({ shortUrl: req.params.shortcode });
-        // console.log(url.length, 'll')
+
         if (url) {
             //update the number of time it has been accessed
             url.clicks++;
