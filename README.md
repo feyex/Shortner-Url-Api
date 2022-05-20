@@ -37,7 +37,7 @@ npm run dev
 
 ## Database Setup
 
-A folder called App and a file called db.js should be created to hold the mongodb address.
+In a folder called App and a file called db.js the mongodb address sould be added.
 Example of the content is:
 ```
     module.exports = {
